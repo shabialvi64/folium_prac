@@ -1,9 +1,5 @@
-name: geospatial2
-channels:
-  - defaults
-  - conda-forge
 dependencies:
-  - folium=0.14.0
-  - pandas=2.1.4
-  - streamlit=1.30.0
-prefix: C:\Users\Shoaib Alvi\.conda\envs\geospatial2
+  - folium
+  - pandas
+  - streamlit
+
