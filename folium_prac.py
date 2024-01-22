@@ -1,14 +1,12 @@
-import pandas as pd
 import streamlit as st
-import folium
-def main():
-    st.title("Folium Map with Streamlit")
-
-    # Create a folium map object
-    m = folium.Map(location=[30.37533, 69.3451], zoom_start=5)
-
-    # Display the map
-    st.write(m)
-
-if __name__ == "__main__":
-    main()
+import pandas as pd
+import geopandas as gpd
+#import fiona
+st.title("Geopandas Streamlit Web App")
+# Load data
+shapefile= gpd.read_file('D:/Branch_Locator/Pakistan Boundary/Pakistan.shp')
+# url = "https://raw.githubusercontent.com/mhaffner/data/master/states.geojson"
+# states = gpd.read_file(url)
+# Display data
+st.write(shapefile)
+#st.write(states)
